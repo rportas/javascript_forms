@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>navigational menu</title>
+
+<script type = "text/javascript">
+<!-- hide me
+function goToSite(the_site){
+	
+	window.location = the_site;	
+}
+// show me -->
+</script>
+</head>
+
+<body>
+<h1>Select your destination</h1>
+<form name = "the_form">
+<fieldset>
+<legend>Choose one</legend>
+
+<select name = "the_select" onChange = "goToSite(this.value);">
+<option value = "#; return false" selected>Choose one site</option>
+<option value = "http://www.bbc.co.uk/news">BBC News</option>
+<option value = "https://www.theguardian.com/uk">The Guardian</option>
+<option value = "http://www.independent.co.uk/">The Independent</option>
+<option value = "https://inews.co.uk/">i</option>
+<option value = "http://news.sky.com/">Sky News</option>
+</select>
+</fieldset>
+
+</form>
+
+</body>
+</html>
